@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Travel Planner - Result</title>
+</head>
+<body>
+    <h1>Recommended Itinerary</h1>
+    <p><strong>Destination:</strong> {{ result['destination'] }}</p>
+    <p><strong>Duration:</strong> {{ result['duration'] }} days</p>
+    <p><strong>Transportation:</strong> {{ result['transportation'] }}</p>
+    <p><strong>Suggested Activities:</strong> {{ result['suggested_activities'] }}</p>
+    <p>Results exported to Recommended_Itinerary_OpenAI.xlsx</p>
+</body>
+</html>

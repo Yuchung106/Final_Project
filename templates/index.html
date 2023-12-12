@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Travel Planner</title>
+</head>
+<body>
+    <h1>Travel Planner</h1>
+    <form method="post" action="/">
+        <label for="destination">Destination:</label>
+        <input type="text" name="destination" required><br>
+
+        <label for="duration">Duration (days):</label>
+        <input type="number" name="duration" required><br>
+
+        <label for="transportation">Transportation:</label>
+        <select name="transportation" required>
+            <option value="car">Car</option>
+            <option value="train">Train</option>
+            <option value="plane">Plane</option>
+        </select><br>
+
+        <input type="submit" value="Generate Itinerary">
+    </form>
+</body>
+</html>
